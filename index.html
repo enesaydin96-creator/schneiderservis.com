@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schneider & APC UPS Servis | Orijinal Akü Değişimi | Aytech Teknoloji</title>
+<meta name="description" content="APC ve Schneider Electric UPS sistemleri için profesyonel bakım, orijinal akü değişimi ve 7/24 arıza servis hizmeti. Türkiye geneli kurumsal UPS bakım anlaşmaları.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%233DCD58'/%3E%3Cpath d='M8 16h4l3-7 4 14 3-7h6' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#3DCD58;--green-dark:#2aab42;--green-dim:rgba(61,205,88,0.12);--red:#E8382D;--red-dim:rgba(232,56,45,0.15);--amber:#F5A623;--amber-dim:rgba(245,166,35,0.15);--ink:#111418;--ink2:#1e2328;--ink3:#2c3238;--muted:#7a8490;--border:rgba(255,255,255,0.08);--white:#ffffff;}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--ink);color:var(--white);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:.5;}
+
+.topbar{background:var(--green);color:var(--ink);font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:.06em;padding:9px 32px;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:100;}
+.topbar a{color:var(--ink);text-decoration:none;font-weight:600;}
+.topbar-pulse{display:inline-flex;align-items:center;gap:7px;}
+.topbar-pulse::before{content:'';width:7px;height:7px;background:var(--ink);border-radius:50%;animation:pulse 1.5s ease infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(1.3);}}
+
+nav{background:rgba(17,20,24,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 40px;display:flex;align-items:center;height:68px;position:sticky;top:0;z-index:200;}
+.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:20px;color:var(--white);text-decoration:none;display:flex;align-items:center;gap:12px;flex:1;}
+.logo-icon{width:36px;height:36px;background:var(--green);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.logo-sub{font-size:11px;font-family:'DM Mono',monospace;color:var(--muted);font-weight:400;letter-spacing:.05em;margin-top:1px;}
+.nav-cta{background:var(--red);color:var(--white);padding:10px 20px;border-radius:8px;font-weight:600;font-size:13px;text-decoration:none;display:flex;align-items:center;gap:7px;transition:background .15s;white-space:nowrap;}
+.nav-cta:hover{background:#c42d23;}
+.nav-link{color:var(--muted);text-decoration:none;font-size:13px;font-weight:500;padding:8px 14px;transition:color .15s;display:none;}
+@media(min-width:768px){.nav-link{display:block;}}
+.nav-link:hover{color:var(--white);}
+
+.hero{position:relative;z-index:1;padding:80px 40px 72px;overflow:hidden;}
+.hero::after{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(61,205,88,.07) 0%,transparent 65%);pointer-events:none;}
+.hero-inner{max-width:900px;margin:0 auto;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--green-dim);border:1px solid rgba(61,205,88,.25);color:var(--green);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;padding:6px 14px;border-radius:99px;margin-bottom:28px;}
+.hero-badge-dot{width:6px;height:6px;background:var(--green);border-radius:50%;animation:pulse 2s ease infinite;}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(30px,4.5vw,58px);line-height:1.06;letter-spacing:-.03em;margin-bottom:22px;}
+h1 .hl{color:var(--green);}
+.hero-sub{font-size:17px;color:#8a9aaa;line-height:1.7;max-width:640px;margin-bottom:40px;font-weight:300;}
+.hero-sub strong{color:var(--white);font-weight:500;}
+
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:40px;}
+.btn-emergency{background:var(--red);color:var(--white);padding:16px 28px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:all .15s;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;}
+.btn-emergency:hover{background:#c42d23;transform:translateY(-2px);box-shadow:0 8px 32px rgba(232,56,45,.4);}
+.btn-secondary{background:transparent;color:var(--white);padding:16px 28px;border-radius:10px;font-weight:500;font-size:15px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:all .15s;border:1px solid var(--border);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.btn-secondary:hover{border-color:var(--green);color:var(--green);}
+
+.trust-bar{display:flex;flex-wrap:wrap;border:1px solid var(--border);border-radius:12px;overflow:hidden;}
+.trust-item{display:flex;align-items:center;gap:9px;padding:14px 20px;font-size:13px;color:#8a9aaa;font-weight:400;flex:1;min-width:170px;border-right:1px solid var(--border);}
+.trust-item:last-child{border-right:none;}
+.trust-check{color:var(--green);font-size:15px;flex-shrink:0;}
+
+#hesaplayici{position:relative;z-index:1;}
+.calc-wrap{max-width:900px;margin:0 auto;padding:0 40px 80px;}
+.section-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.15em;color:var(--green);text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:10px;}
+.section-label::before{content:'';width:24px;height:1px;background:var(--green);}
+h2{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(24px,3vw,38px);letter-spacing:-.03em;margin-bottom:10px;}
+.section-sub{font-size:15px;color:var(--muted);margin-bottom:36px;font-weight:300;}
+
+.calc-panel{background:var(--ink2);border:1px solid var(--border);border-radius:16px;padding:36px;position:relative;overflow:hidden;}
+.calc-panel::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--green),#2aab42);}
+.calc-fields{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:28px;}
+.calc-fields.three-col{grid-template-columns:1fr 1fr 1fr;}
+@media(max-width:700px){.calc-fields,.calc-fields.three-col{grid-template-columns:1fr;}}
+.field-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-bottom:8px;}
+.field-select{width:100%;background:var(--ink3);border:1px solid rgba(255,255,255,.1);color:var(--white);padding:13px 16px;border-radius:8px;font-size:14px;font-family:'DM Sans',sans-serif;appearance:none;cursor:pointer;transition:border-color .15s;}
+.field-select:focus{outline:none;border-color:var(--green);}
+.field-select option{background:var(--ink3);}
+.calc-btn{width:100%;background:var(--ink3);border:1px solid rgba(255,255,255,.1);color:var(--white);padding:14px;border-radius:8px;font-size:14px;font-weight:600;font-family:'Syne',sans-serif;cursor:pointer;transition:all .15s;letter-spacing:.02em;}
+.calc-btn:hover{background:var(--green);border-color:var(--green);color:var(--ink);}
+
+.calc-result{display:none;margin-top:24px;border-radius:12px;padding:24px 28px;border:1px solid;}
+.calc-result.green{background:var(--green-dim);border-color:rgba(61,205,88,.3);}
+.calc-result.amber{background:var(--amber-dim);border-color:rgba(245,166,35,.3);}
+.calc-result.red{background:var(--red-dim);border-color:rgba(232,56,45,.3);}
+.result-header{display:flex;align-items:center;gap:12px;margin-bottom:10px;}
+.result-icon{font-size:24px;}
+.result-title{font-family:'Syne',sans-serif;font-weight:700;font-size:17px;}
+.result-title.green{color:var(--green);}
+.result-title.amber{color:var(--amber);}
+.result-title.red{color:var(--red);}
+.result-text{font-size:14px;color:#8a9aaa;line-height:1.65;margin-bottom:20px;}
+.btn-offer{display:inline-flex;align-items:center;gap:9px;background:var(--green);color:var(--ink);padding:13px 24px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;transition:all .15s;font-family:'DM Sans',sans-serif;}
+.btn-offer:hover{background:var(--green-dark);transform:translateY(-1px);}
+
+.services-wrap{max-width:900px;margin:0 auto;padding:0 40px 80px;}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}
+.svc-card{background:var(--ink2);border:1px solid var(--border);border-radius:14px;padding:28px 24px;position:relative;overflow:hidden;transition:border-color .2s,transform .2s;}
+.svc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .2s;}
+.svc-card:hover{border-color:rgba(61,205,88,.3);transform:translateY(-3px);}
+.svc-card:hover::after{transform:scaleX(1);}
+.svc-icon{width:48px;height:48px;background:var(--green-dim);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px;}
+.svc-title{font-family:'Syne',sans-serif;font-weight:700;font-size:17px;margin-bottom:8px;letter-spacing:-.02em;}
+.svc-desc{font-size:13px;color:var(--muted);line-height:1.65;}
+.svc-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;}
+.svc-tag{background:var(--ink3);color:var(--muted);font-family:'DM Mono',monospace;font-size:10px;padding:3px 9px;border-radius:4px;letter-spacing:.04em;}
+
+.why-wrap{max-width:900px;margin:0 auto;padding:0 40px 80px;}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;}
+.why-item{background:var(--ink2);border:1px solid var(--border);border-radius:12px;padding:22px 20px;}
+.why-num{font-family:'Syne',sans-serif;font-weight:800;font-size:36px;color:var(--green);letter-spacing:-.04em;line-height:1;margin-bottom:6px;}
+.why-label{font-size:13px;color:var(--muted);}
+
+.contact-wrap{max-width:900px;margin:0 auto;padding:0 40px 80px;}
+.contact-card{background:linear-gradient(135deg,var(--ink2) 0%,var(--ink3) 100%);border:1px solid var(--border);border-radius:16px;padding:48px 40px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;position:relative;overflow:hidden;}
+.contact-card::before{content:'';position:absolute;top:-80px;right:-80px;width:300px;height:300px;background:radial-gradient(circle,rgba(61,205,88,.06) 0%,transparent 65%);}
+@media(max-width:640px){.contact-card{grid-template-columns:1fr;padding:28px 22px;}.contact-btns{flex-direction:column;}}
+.contact-title{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(22px,3vw,32px);letter-spacing:-.03em;margin-bottom:10px;}
+.contact-sub{font-size:15px;color:var(--muted);font-weight:300;}
+.contact-btns{display:flex;flex-direction:column;gap:10px;flex-shrink:0;}
+.btn-wa{background:#25D366;color:#fff;padding:14px 24px;border-radius:10px;font-weight:700;font-size:14px;text-decoration:none;display:flex;align-items:center;gap:9px;white-space:nowrap;transition:all .15s;}
+.btn-wa:hover{background:#1fba57;transform:translateY(-1px);}
+.btn-tel{background:transparent;color:var(--white);padding:14px 24px;border-radius:10px;font-weight:500;font-size:14px;text-decoration:none;display:flex;align-items:center;gap:9px;border:1px solid var(--border);white-space:nowrap;transition:border-color .15s;}
+.btn-tel:hover{border-color:var(--green);color:var(--green);}
+
+.section-divider{height:1px;background:var(--border);max-width:900px;margin:0 auto 60px;position:relative;z-index:1;}
+
+footer{border-top:1px solid var(--border);padding:28px 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted);position:relative;z-index:1;}
+footer a{color:var(--muted);text-decoration:none;}
+footer a:hover{color:var(--white);}
+.footer-brand{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:var(--white);}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.hero-inner>*{animation:fadeUp .5s ease both;}
+.hero-badge{animation-delay:.1s;}
+h1{animation-delay:.2s;}
+.hero-sub{animation-delay:.3s;}
+.hero-btns{animation-delay:.4s;}
+.trust-bar{animation-delay:.5s;}
+
+@media(max-width:600px){
+  .hero{padding:48px 20px 56px;}
+  .calc-wrap,.services-wrap,.why-wrap,.contact-wrap{padding-left:20px;padding-right:20px;}
+  nav{padding:0 16px;}
+  .topbar{padding:8px 16px;font-size:10px;}
+  footer{padding:20px;flex-direction:column;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="topbar-pulse">7/24 ACİL SERVİS AKTİF</span>
+  <span><a href="tel:+905058525331">0 (505) 852 53 31</a> · Aytech Teknoloji</span>
+</div>
+
+<nav>
+  <a href="#" class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+        <path d="M3 10h3l2.5-6 3 12 2.5-6H17" stroke="#111418" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div>
+      <div>Schneider Servis</div>
+      <div class="logo-sub">APC &amp; Schneider UPS Uzmanı</div>
+    </div>
+  </a>
+  <a href="#hizmetler" class="nav-link">Hizmetler</a>
+  <a href="#hesaplayici" class="nav-link">Akü Hesaplayıcı</a>
+  <a href="https://wa.me/905058525331" class="nav-cta" target="_blank" rel="noopener">🚨 Acil Servis</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      YETKİLİ SERVİS · AYTECH TEKNOLOJİ
+    </div>
+    <h1>APC &amp; Schneider UPS Sistemleriniz İçin<br><span class="hl">Profesyonel Bakım</span> ve Orijinal Akü Değişimi</h1>
+    <p class="hero-sub">Cihazınız alarm mı veriyor? <strong>7/24 Kesintisiz Destek,</strong> Termal Kamera Analizi ve Aytech Teknoloji Güvencesiyle <strong>Kurumsal Bakım Anlaşmaları.</strong></p>
+    <div class="hero-btns">
+      <a href="https://wa.me/905058525331?text=Merhaba%2C+acil+UPS+servis+deste%C4%9Fi+almak+istiyorum." class="btn-emergency" target="_blank" rel="noopener">🚨 Acil Servis Çağır</a>
+      <a href="#hesaplayici" class="btn-secondary">⚡ Akü Ömrünü Hesapla</a>
+    </div>
+    <div class="trust-bar">
+      <div class="trust-item"><span class="trust-check">✓</span> Orijinal Yedek Parça</div>
+      <div class="trust-item"><span class="trust-check">✓</span> Termal Kamera ile Analiz</div>
+      <div class="trust-item"><span class="trust-check">✓</span> 7/24 SLA Desteği</div>
+      <div class="trust-item"><span class="trust-check">✓</span> Türkiye Geneli Hizmet</div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section style="position:relative;z-index:1;padding-bottom:0;">
+  <div class="why-wrap" style="padding-bottom:60px;">
+    <div class="why-grid">
+      <div class="why-item"><div class="why-num">15+</div><div class="why-label">Yıllık UPS servis deneyimi</div></div>
+      <div class="why-item"><div class="why-num">500+</div><div class="why-label">Kurumsal müşteri portföyü</div></div>
+      <div class="why-item"><div class="why-num">4 saat</div><div class="why-label">Ortalama müdahale süresi</div></div>
+      <div class="why-item"><div class="why-num">%100</div><div class="why-label">Orijinal parça garantisi</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CALCULATOR -->
+<section id="hesaplayici" style="position:relative;z-index:1;">
+  <div class="calc-wrap">
+    <div class="section-label">İnteraktif Araç</div>
+    <h2>Akü Risk ve Değişim Hesaplayıcı</h2>
+    <p class="section-sub">Cihazınızın modelini ve kurulum yılını seçin — risk seviyenizi anında öğrenin.</p>
+    <div class="calc-panel">
+      <div class="calc-fields">
+        <div>
+          <div class="field-label">Cihaz Serisi</div>
+          <select class="field-select" id="calc-series" onchange="seriesChanged()">
+            <option value="">— Seri seçin —</option>
+            <optgroup label="── Ev &amp; Küçük Ofis ──">
+              <option value="APC Back-UPS">APC Back-UPS</option>
+              <option value="APC Back-UPS Pro">APC Back-UPS Pro</option>
+              <option value="APC Back-UPS Connect">APC Back-UPS Connect</option>
+            </optgroup>
+            <optgroup label="── Kurumsal / Orta Ölçek ──">
+              <option value="APC Smart-UPS SMT">APC Smart-UPS SMT</option>
+              <option value="APC Smart-UPS SMX">APC Smart-UPS SMX</option>
+              <option value="APC Smart-UPS SRT">APC Smart-UPS SRT</option>
+              <option value="APC Smart-UPS Ultra">APC Smart-UPS Ultra</option>
+              <option value="APC Smart-UPS Modular Ultra">APC Smart-UPS Modular Ultra</option>
+              <option value="APC Easy UPS BV">APC Easy UPS BV</option>
+              <option value="APC Easy UPS SMVS">APC Easy UPS SMVS</option>
+              <option value="APC Easy UPS 3S">APC Easy UPS 3S</option>
+              <option value="APC Easy UPS 3M">APC Easy UPS 3M</option>
+            </optgroup>
+            <optgroup label="── Veri Merkezi / Endüstriyel ──">
+              <option value="APC Galaxy VS">APC Galaxy VS</option>
+              <option value="APC Galaxy VX">APC Galaxy VX</option>
+              <option value="APC Galaxy VM">APC Galaxy VM</option>
+              <option value="APC Galaxy VL">APC Galaxy VL</option>
+              <option value="APC Galaxy 300">APC Galaxy 300</option>
+              <option value="APC Galaxy 5500">APC Galaxy 5500</option>
+              <option value="APC Galaxy 9000">APC Galaxy 9000</option>
+              <option value="Schneider Symmetra PX">Schneider Symmetra PX</option>
+              <option value="Schneider Symmetra MW">Schneider Symmetra MW</option>
+            </optgroup>
+          </select>
+        </div>
+        <div id="model-field" style="display:none;">
+          <div class="field-label">Model / Kapasite</div>
+          <select class="field-select" id="calc-model">
+            <option value="">— Model seçin —</option>
+          </select>
+        </div>
+        <div>
+          <div class="field-label">Kurulum / Son Akü Değişim Yılı</div>
+          <select class="field-select" id="calc-year">
+            <option value="">— Yıl seçin —</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+          </select>
+        </div>
+      </div>
+      <button class="calc-btn" onclick="hesapla()">Akü Risk Durumunu Analiz Et →</button>
+
+      <div class="calc-result green" id="result-green">
+        <div class="result-header"><span class="result-icon">✅</span><span class="result-title green">Sisteminiz Güvende</span></div>
+        <p class="result-text" id="result-text-green"></p>
+        <a href="#" class="btn-offer" id="offer-btn-green" target="_blank" rel="noopener">📋 Yıllık Bakım Anlaşması Al</a>
+      </div>
+      <div class="calc-result amber" id="result-amber">
+        <div class="result-header"><span class="result-icon">⚠️</span><span class="result-title amber">Dikkat! Risk Sınırında</span></div>
+        <p class="result-text" id="result-text-amber"></p>
+        <a href="#" class="btn-offer" id="offer-btn-amber" target="_blank" rel="noopener">🔋 Orijinal Akü Teklifi Al</a>
+      </div>
+      <div class="calc-result red" id="result-red">
+        <div class="result-header"><span class="result-icon">🚨</span><span class="result-title red">Kritik Risk!</span></div>
+        <p class="result-text" id="result-text-red"></p>
+        <a href="#" class="btn-offer" id="offer-btn-red" target="_blank" rel="noopener" style="background:var(--red);color:#fff;">⚡ Acil Akü Değişim Teklifi Al</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SERVICES -->
+<section id="hizmetler" style="position:relative;z-index:1;">
+  <div class="services-wrap">
+    <div class="section-label">Hizmetlerimiz</div>
+    <h2>Kapsamlı UPS Servis Çözümleri</h2>
+    <p class="section-sub">IT altyapınızın kesintisiz çalışması için uçtan uca servis desteği.</p>
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="svc-icon">🔧</div>
+        <div class="svc-title">Periyodik Bakım (PM)</div>
+        <div class="svc-desc">Termal kamera analizi, akü kapasite testi, kontak temizliği ve yazılım güncelleme dahil kapsamlı yıllık bakım protokolü. SLA sözleşmesi ile garanti altında.</div>
+        <div class="svc-tags"><span class="svc-tag">TERMAL ANALİZ</span><span class="svc-tag">SLA</span><span class="svc-tag">KAPASİTE TESTİ</span></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">🔋</div>
+        <div class="svc-title">Orijinal Akü Değişimi</div>
+        <div class="svc-desc">Yalnızca APC ve Schneider onaylı orijinal akü kullanımı. Yerinde değişim, kapasite doğrulama testi ve 2 yıl parça garantisi ile eksiksiz hizmet.</div>
+        <div class="svc-tags"><span class="svc-tag">ORİJİNAL PARÇA</span><span class="svc-tag">2 YIL GARANTİ</span><span class="svc-tag">YERİNDE DEĞİŞİM</span></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">⚡</div>
+        <div class="svc-title">Arıza Onarım ve Devreye Alma</div>
+        <div class="svc-desc">Acil müdahale, kart seviyesinde komponent onarımı ve yeni sistem devreye alma. Fabrika, veri merkezi ve kritik tesis deneyimi.</div>
+        <div class="svc-tags"><span class="svc-tag">ACİL MÜDAHALE</span><span class="svc-tag">KART ONARIM</span><span class="svc-tag">VERİ MERKEZİ</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<section style="position:relative;z-index:1;">
+  <div class="contact-wrap">
+    <div class="contact-card">
+      <div>
+        <div class="section-label">İletişim</div>
+        <div class="contact-title">Hızlı Destek İçin<br>Bizi Arayın</div>
+        <p class="contact-sub" style="margin-top:8px;">Feyzullah Serap Cd. 10/A · 34843 Maltepe / İstanbul<br>
+        <script>document.write('<a href="mai'+'lto:in'+'fo@aytechteknoloji.com.tr" style="color:var(--muted);text-decoration:none;">in'+'fo@aytechteknoloji.com.tr</a>');</script></p>
+      </div>
+      <div class="contact-btns">
+        <a href="https://wa.me/905058525331" class="btn-wa" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Destek
+        </a>
+        <a href="tel:+905058525331" class="btn-tel">📞 0 (505) 852 53 31</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div class="footer-brand">schneiderservis.com</div>
+    <div style="margin-top:4px;">© 2026 Aytech Teknoloji İnovasyon Ltd. Şti. · Tüm hakları saklıdır.</div>
+  </div>
+  <div style="text-align:right;">
+    <a href="https://aytechteknoloji.com">aytechteknoloji.com</a>
+    <a href="https://aytechelektromarket.com" style="margin-left:12px;">aytechelektromarket.com</a>
+  </div>
+</footer>
+
+<script>
+var MODELS = {
+  'APC Back-UPS':            ['BE600-GR (600VA)','BE850G2-GR (850VA)','BX1600MI (1600VA)','BX950MI (950VA)'],
+  'APC Back-UPS Pro':        ['BR900MI (900VA)','BR1200MI (1200VA)','BR1600MI (1600VA)','BR550G-GR (550VA)'],
+  'APC Back-UPS Connect':    ['BGE90M (90W)','BGE50ML (50W)'],
+  'APC Smart-UPS SMT':       ['SMT750I (750VA)','SMT1000I (1000VA)','SMT1500I (1500VA)','SMT2200I (2200VA)','SMT3000I (3000VA)'],
+  'APC Smart-UPS SMX':       ['SMX750I (750VA)','SMX1000I (1000VA)','SMX1500I (1500VA)','SMX2000LVNC (2000VA)','SMX3000LVNC (3000VA)'],
+  'APC Smart-UPS SRT':       ['SRT1000RMXLI (1000VA)','SRT1500RMXLI (1500VA)','SRT2200RMXLI (2200VA)','SRT3000RMXLI (3000VA)','SRT5KRMXLI (5kVA)','SRT6KRMXLI (6kVA)','SRT8KRMXLI (8kVA)','SRT10KRMXLI (10kVA)'],
+  'APC Smart-UPS Ultra':     ['SRTL1000RMXLI (1000VA)','SRTL1500RMXLI (1500VA)','SRTL2200RMXLI (2200VA)','SRTL3000RMXLI (3000VA)'],
+  'APC Smart-UPS Modular Ultra': ['SRTLM3KT2 (3kVA)','SRTLM6KT2 (6kVA)','SRTLM10KT4 (10kVA)'],
+  'APC Easy UPS BV':         ['BV500I (500VA)','BV700I (700VA)','BV1000I (1000VA)','BV1500I (1500VA)','BV2000I (2000VA)'],
+  'APC Easy UPS SMVS':       ['SMVS1000CAI (1000VA)','SMVS1500CAI (1500VA)','SMVS2000CAI (2000VA)','SMVS3000CAI (3000VA)'],
+  'APC Easy UPS 3S':         ['3S8KI (8kVA)','3S10KI (10kVA)','3S15KI (15kVA)','3S20KI (20kVA)'],
+  'APC Easy UPS 3M':         ['3M10KHB (10kVA)','3M15KHB (15kVA)','3M20KHB (20kVA)','3M30KHB (30kVA)','3M40KHB (40kVA)'],
+  'APC Galaxy VS':           ['GVSUPS10KB (10kVA)','GVSUPS15KB (15kVA)','GVSUPS20KB (20kVA)','GVSUPS30KB (30kVA)','GVSUPS40KB (40kVA)'],
+  'APC Galaxy VX':           ['GVX10K (10kVA)','GVX15K (15kVA)','GVX20K (20kVA)','GVX30K (30kVA)','GVX40K (40kVA)'],
+  'APC Galaxy VM':           ['GVMUPS10K (10kVA)','GVMUPS15K (15kVA)','GVMUPS20K (20kVA)','GVMUPS30K (30kVA)','GVMUPS40K (40kVA)'],
+  'APC Galaxy VL':           ['GVLUPS30K (30kVA)','GVLUPS40K (40kVA)','GVLUPS60K (60kVA)','GVLUPS80K (80kVA)','GVLUPS100K (100kVA)','GVLUPS150K (150kVA)','GVLUPS200K (200kVA)'],
+  'APC Galaxy 300':          ['G3HT20K (20kVA)','G3HT30K (30kVA)','G3HT40K (40kVA)'],
+  'APC Galaxy 5500':         ['G55T10KF (10kVA)','G55T15KF (15kVA)','G55T20KF (20kVA)','G55T30KF (30kVA)','G55T40KF (40kVA)'],
+  'APC Galaxy 9000':         ['G9TUPS20KH (20kVA)','G9TUPS30KH (30kVA)','G9TUPS40KH (40kVA)','G9TUPS60KH (60kVA)','G9TUPS80KH (80kVA)'],
+  'Schneider Symmetra PX':   ['SY8K12BX152 (8kVA)','SY16K48H (16kVA)','SY32K48H (32kVA)','SY48K48H (48kVA)','SY64K64H (64kVA)','SY96K96H (96kVA)','SY128K160H (128kVA)'],
+  'Schneider Symmetra MW':   ['SYMF250KH (250kVA)','SYMF500KH (500kVA)','SYMF800KH (800kVA)','SYMF1000KH (1000kVA)']
+};
+
+function seriesChanged() {
+  var series = document.getElementById('calc-series').value;
+  var modelField = document.getElementById('model-field');
+  var modelSelect = document.getElementById('calc-model');
+  var calcFields = document.querySelector('.calc-fields');
+
+  modelSelect.innerHTML = '<option value="">— Model seçin —</option>';
+
+  if (series && MODELS[series]) {
+    MODELS[series].forEach(function(m) {
+      var opt = document.createElement('option');
+      opt.value = m;
+      opt.textContent = m;
+      modelSelect.appendChild(opt);
+    });
+    modelField.style.display = 'block';
+    calcFields.classList.add('three-col');
+  } else {
+    modelField.style.display = 'none';
+    calcFields.classList.remove('three-col');
+  }
+
+  // Sonuçları sıfırla
+  document.getElementById('result-green').style.display = 'none';
+  document.getElementById('result-amber').style.display = 'none';
+  document.getElementById('result-red').style.display   = 'none';
+}
+
+function hesapla() {
+  var series = document.getElementById('calc-series').value;
+  var model  = document.getElementById('calc-model').value;
+  var year   = parseInt(document.getElementById('calc-year').value);
+
+  if (!series) { alert('Lutfen cihaz serisini secin.'); return; }
+  if (MODELS[series] && !model) { alert('Lutfen model / kapasite secin.'); return; }
+  if (!year) { alert('Lutfen kurulum yilini secin.'); return; }
+
+  var fullName = model ? series + ' ' + model : series;
+  var diff = 2026 - year;
+
+  document.getElementById('result-green').style.display = 'none';
+  document.getElementById('result-amber').style.display = 'none';
+  document.getElementById('result-red').style.display   = 'none';
+
+  var waBase = 'https://wa.me/905058525331?text=Merhaba%2C+' + encodeURIComponent(fullName) + '+cihazimin+akuleri+' + year + '%27den+beri+kullanimdadir.+Orijinal+degisim+fiyati+alabilir+miyim%3F';
+
+  if (diff <= 3) {
+    document.getElementById('result-text-green').textContent =
+      fullName + ' sisteminiz ' + year + ' yilindan bu yana ' + diff + ' yildir kullanimdadir. Akuleriniz normal omur araligindadir. Yillik periyodik bakim (PM) ile sisteminizin verimini koruyun.';
+    document.getElementById('offer-btn-green').href =
+      'https://wa.me/905058525331?text=Merhaba%2C+' + encodeURIComponent(fullName) + '+icin+yillik+bakim+anlasmasi+hakkinda+bilgi+almak+istiyorum.';
+    document.getElementById('result-green').style.display = 'block';
+  } else if (diff <= 5) {
+    document.getElementById('result-text-amber').textContent =
+      fullName + ' sisteminizin akuleri uzerinden ' + diff + ' yil gecmistir. Akuleriniz risk sinirindadir; yuzde 30 kapasite kaybi yasaniyor olabilir. Beklenmedik kesinti riskine karsi degisim planlamasi onerilir.';
+    document.getElementById('offer-btn-amber').href = waBase;
+    document.getElementById('result-amber').style.display = 'block';
+  } else {
+    document.getElementById('result-text-red').textContent =
+      fullName + ' sisteminizin aku omru dolmustur: ' + diff + ' yillik kullanim. Kritik risk! Ilk sebeke kesintisinde cihaziniz yuku tasiymayacaktir. Sunuculariniz, uretim hattiniz veya veri merkeziniz kesintiye girebilir. Acil degisim onerilir.';
+    document.getElementById('offer-btn-red').href = waBase;
+    document.getElementById('result-red').style.display = 'block';
+  }
+
+  setTimeout(function(){
+    var el = document.querySelector('.calc-result[style*="block"]');
+    if (el) el.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }, 100);
+}
+</script>
+</body>
+</html>
