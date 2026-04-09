@@ -129,8 +129,10 @@ h1{animation-delay:.2s;}
 .hero-btns{animation-delay:.4s;}
 .trust-bar{animation-delay:.5s;}
 
-@media(max-width:600px){
-  .hero{padding:48px 20px 56px;}
+@media(max-width:700px){
+  .smart-track-grid{grid-template-columns:1fr!important;}
+  .smart-track-qr{display:none;}
+}
   .calc-wrap,.services-wrap,.why-wrap,.contact-wrap{padding-left:20px;padding-right:20px;}
   nav{padding:0 16px;}
   .topbar{padding:8px 16px;font-size:10px;}
@@ -159,6 +161,7 @@ h1{animation-delay:.2s;}
   </a>
   <a href="#hizmetler" class="nav-link">Hizmetler</a>
   <a href="#hesaplayici" class="nav-link">Akü Hesaplayıcı</a>
+  <a href="#" class="nav-link" style="border:1px solid var(--border);border-radius:8px;padding:7px 14px;display:flex;align-items:center;gap:6px;margin-right:4px;"><span style="color:var(--green);font-size:9px;">●</span> CRM Girişi</a>
   <a href="https://wa.me/905058525331" class="nav-cta" target="_blank" rel="noopener">🚨 Acil Servis</a>
 </nav>
 
@@ -284,6 +287,58 @@ h1{animation-delay:.2s;}
 
 <div class="section-divider"></div>
 
+<!-- SMART-TRACK -->
+<section style="position:relative;z-index:1;">
+  <div style="max-width:900px;margin:0 auto;padding:0 40px 80px;">
+    <div style="background:var(--green-dim);border:1px solid rgba(61,205,88,.2);border-radius:20px;padding:56px 48px;display:grid;grid-template-columns:1fr 320px;gap:60px;align-items:center;position:relative;overflow:hidden;" class="smart-track-grid">
+      <div style="position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(61,205,88,.06) 0%,transparent 65%);pointer-events:none;"></div>
+      <div>
+        <div class="section-label">Akıllı Takip Sistemi</div>
+        <h2 style="margin-bottom:20px;">Siz Unutun,<br><span class="hl">Sistem Hatırlasın</span></h2>
+        <p style="color:#8a9aaa;margin-bottom:28px;font-size:15px;font-weight:300;">Bakım anlaşması yaptığımız her cihaza bir <strong style="color:var(--white);">Dijital Kimlik (QR)</strong> atıyoruz. Aytech CRM algoritmaları kullanım verilerinizi analiz ederek riski önceden tespit eder:</p>
+        <ul style="list-style:none;display:grid;gap:14px;color:#8a9aaa;font-size:14px;">
+          <li style="display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--green);margin-top:2px;flex-shrink:0;">✓</span> Akü ömürleri CRM üzerinden otomatik takip edilir.</li>
+          <li style="display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--green);margin-top:2px;flex-shrink:0;">✓</span> Bakım vakti gelmeden 30 gün önce sistem sizi uyarır.</li>
+          <li style="display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--green);margin-top:2px;flex-shrink:0;">✓</span> Tüm servis raporlarınıza dijital panelden ulaşabilirsiniz.</li>
+          <li style="display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--green);margin-top:2px;flex-shrink:0;">✓</span> Bir sonraki değişim döngüsünü sisteme bağlayın, takibini bize bırakın.</li>
+        </ul>
+        <a href="https://wa.me/905058525331?text=Merhaba%2C+Aytech+Smart-Track+sistemi+hakk%C4%B1nda+bilgi+almak+istiyorum." class="btn-offer" style="margin-top:28px;display:inline-flex;" target="_blank" rel="noopener">📋 Smart-Track Anlaşması Al</a>
+      </div>
+      <div style="background:var(--ink);padding:28px;border-radius:16px;border:1px solid rgba(61,205,88,.3);text-align:center;flex-shrink:0;" class="smart-track-qr">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;color:var(--green);margin-bottom:18px;">CRM VERİ AKIŞI: AKTİF</div>
+        <div style="width:130px;height:130px;background:white;margin:0 auto;padding:10px;border-radius:10px;">
+          <!-- Inline SVG QR - Demo -->
+          <svg viewBox="0 0 21 21" width="110" height="110" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+            <rect width="21" height="21" fill="white"/>
+            <!-- Finder pattern TL -->
+            <rect x="0" y="0" width="7" height="7" fill="black"/><rect x="1" y="1" width="5" height="5" fill="white"/><rect x="2" y="2" width="3" height="3" fill="black"/>
+            <!-- Finder pattern TR -->
+            <rect x="14" y="0" width="7" height="7" fill="black"/><rect x="15" y="1" width="5" height="5" fill="white"/><rect x="16" y="2" width="3" height="3" fill="black"/>
+            <!-- Finder pattern BL -->
+            <rect x="0" y="14" width="7" height="7" fill="black"/><rect x="1" y="15" width="5" height="5" fill="white"/><rect x="2" y="16" width="3" height="3" fill="black"/>
+            <!-- Data modules -->
+            <rect x="8" y="0" width="1" height="1" fill="black"/><rect x="10" y="0" width="1" height="1" fill="black"/><rect x="12" y="0" width="1" height="1" fill="black"/>
+            <rect x="8" y="2" width="2" height="1" fill="black"/><rect x="11" y="2" width="1" height="1" fill="black"/>
+            <rect x="9" y="4" width="1" height="1" fill="black"/><rect x="11" y="4" width="2" height="1" fill="black"/>
+            <rect x="8" y="6" width="1" height="1" fill="black"/><rect x="10" y="6" width="3" height="1" fill="black"/>
+            <rect x="0" y="8" width="2" height="1" fill="black"/><rect x="3" y="8" width="2" height="1" fill="black"/><rect x="7" y="8" width="1" height="1" fill="black"/><rect x="9" y="8" width="2" height="1" fill="black"/><rect x="12" y="8" width="1" height="1" fill="black"/><rect x="14" y="8" width="3" height="1" fill="black"/><rect x="19" y="8" width="2" height="1" fill="black"/>
+            <rect x="1" y="10" width="1" height="1" fill="black"/><rect x="4" y="10" width="2" height="1" fill="black"/><rect x="8" y="10" width="3" height="1" fill="black"/><rect x="13" y="10" width="2" height="1" fill="black"/><rect x="17" y="10" width="1" height="1" fill="black"/><rect x="20" y="10" width="1" height="1" fill="black"/>
+            <rect x="0" y="12" width="3" height="1" fill="black"/><rect x="5" y="12" width="1" height="1" fill="black"/><rect x="7" y="12" width="2" height="1" fill="black"/><rect x="11" y="12" width="1" height="1" fill="black"/><rect x="14" y="12" width="2" height="1" fill="black"/><rect x="18" y="12" width="3" height="1" fill="black"/>
+            <rect x="8" y="14" width="1" height="1" fill="black"/><rect x="10" y="14" width="2" height="1" fill="black"/><rect x="14" y="14" width="1" height="1" fill="black"/><rect x="17" y="14" width="1" height="1" fill="black"/>
+            <rect x="9" y="16" width="3" height="1" fill="black"/><rect x="15" y="16" width="1" height="1" fill="black"/><rect x="18" y="16" width="2" height="1" fill="black"/>
+            <rect x="8" y="18" width="2" height="1" fill="black"/><rect x="12" y="18" width="1" height="1" fill="black"/><rect x="16" y="18" width="1" height="1" fill="black"/><rect x="19" y="18" width="2" height="1" fill="black"/>
+            <rect x="9" y="20" width="1" height="1" fill="black"/><rect x="11" y="20" width="3" height="1" fill="black"/><rect x="17" y="20" width="1" height="1" fill="black"/>
+          </svg>
+        </div>
+        <div style="margin-top:16px;font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);">Cihaz ID: <span style="color:var(--green);">#APC-7492-XT</span></div>
+        <div style="margin-top:6px;font-size:12px;color:var(--muted);">Demo · Bakım Anlaşmalı Müşteri</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
 <!-- SERVICES -->
 <section id="hizmetler" style="position:relative;z-index:1;">
   <div class="services-wrap">
@@ -349,9 +404,9 @@ h1{animation-delay:.2s;}
 
 <script>
 var MODELS = {
-  'APC Back-UPS':            ['BE600-GR (600VA)','BE850G2-GR (850VA)','BX1600MI (1600VA)','BX950MI (950VA)'],
-  'APC Back-UPS Pro':        ['BR900MI (900VA)','BR1200MI (1200VA)','BR1600MI (1600VA)','BR550G-GR (550VA)'],
-  'APC Back-UPS Connect':    ['BGE90M (90W)','BGE50ML (50W)'],
+  'APC Back-UPS':            ['BE650G2-GR','BE850G2-GR','BX950MI-GR','BX750MI-GR','BX2200MI-GR','BX1600MI-GR','BX1200MI-GR'],
+  'APC Back-UPS Pro':        ['BR650MI','BR900MI','BR1200SI','BR1200G-GR','BR1300MI','BR1500G-GR','BR1600MI','BR1600SI','BGM2200-GR','BGM2200B-GR'],
+  'APC Back-UPS Connect':    ['CP12036LI'],
   'APC Smart-UPS SMT':       ['SMT750I (750VA)','SMT1000I (1000VA)','SMT1500I (1500VA)','SMT2200I (2200VA)','SMT3000I (3000VA)'],
   'APC Smart-UPS SMX':       ['SMX750I (750VA)','SMX1000I (1000VA)','SMX1500I (1500VA)','SMX2000LVNC (2000VA)','SMX3000LVNC (3000VA)'],
   'APC Smart-UPS SRT':       ['SRT1000RMXLI (1000VA)','SRT1500RMXLI (1500VA)','SRT2200RMXLI (2200VA)','SRT3000RMXLI (3000VA)','SRT5KRMXLI (5kVA)','SRT6KRMXLI (6kVA)','SRT8KRMXLI (8kVA)','SRT10KRMXLI (10kVA)'],
@@ -359,8 +414,8 @@ var MODELS = {
   'APC Smart-UPS Modular Ultra': ['SRTLM3KT2 (3kVA)','SRTLM6KT2 (6kVA)','SRTLM10KT4 (10kVA)'],
   'APC Easy UPS BV':         ['BV500I (500VA)','BV700I (700VA)','BV1000I (1000VA)','BV1500I (1500VA)','BV2000I (2000VA)'],
   'APC Easy UPS SMVS':       ['SMVS1000CAI (1000VA)','SMVS1500CAI (1500VA)','SMVS2000CAI (2000VA)','SMVS3000CAI (3000VA)'],
-  'APC Easy UPS 3S':         ['3S8KI (8kVA)','3S10KI (10kVA)','3S15KI (15kVA)','3S20KI (20kVA)'],
-  'APC Easy UPS 3M':         ['3M10KHB (10kVA)','3M15KHB (15kVA)','3M20KHB (20kVA)','3M30KHB (30kVA)','3M40KHB (40kVA)'],
+  'APC Easy UPS 3S':         ['E3SUPS10KHB','E3SUPS10K3I','E3SUPS10K3IB','E3SUPS10K3IB2','E3SUPS15K3I','E3SUPS15K3IB','E3SUPS15KHB','E3SUPS20K3I','E3SUPS20K3IB','E3SUPS20KHB','E3SUPS30K3I','E3SUPS30K3IB','E3SUPS30KHB','E3SUPS40KHB'],
+  'APC Easy UPS 3M':         ['E3MUPS60KHB','E3MUPS80KHB'],
   'APC Galaxy VS':           ['GVSUPS10KB (10kVA)','GVSUPS15KB (15kVA)','GVSUPS20KB (20kVA)','GVSUPS30KB (30kVA)','GVSUPS40KB (40kVA)'],
   'APC Galaxy VX':           ['GVX10K (10kVA)','GVX15K (15kVA)','GVX20K (20kVA)','GVX30K (30kVA)','GVX40K (40kVA)'],
   'APC Galaxy VM':           ['GVMUPS10K (10kVA)','GVMUPS15K (15kVA)','GVMUPS20K (20kVA)','GVMUPS30K (30kVA)','GVMUPS40K (40kVA)'],
@@ -420,18 +475,18 @@ function hesapla() {
 
   if (diff <= 3) {
     document.getElementById('result-text-green').textContent =
-      fullName + ' sisteminiz ' + year + ' yilindan bu yana ' + diff + ' yildir kullanimdadir. Akuleriniz normal omur araligindadir. Yillik periyodik bakim (PM) ile sisteminizin verimini koruyun.';
+      'Aytech CRM algoritmalarimiz ' + fullName + ' sisteminizin ' + year + ' kurulum verisini analiz etti. Akuleriniz ' + diff + ' yillik kullanim ile normal omur araligindadir. Yillik Periyodik Bakim (PM) anlasmasiyla sisteminizin verimini en ust seviyede tutabilirsiniz.';
     document.getElementById('offer-btn-green').href =
       'https://wa.me/905058525331?text=Merhaba%2C+' + encodeURIComponent(fullName) + '+icin+yillik+bakim+anlasmasi+hakkinda+bilgi+almak+istiyorum.';
     document.getElementById('result-green').style.display = 'block';
   } else if (diff <= 5) {
     document.getElementById('result-text-amber').textContent =
-      fullName + ' sisteminizin akuleri uzerinden ' + diff + ' yil gecmistir. Akuleriniz risk sinirindadir; yuzde 30 kapasite kaybi yasaniyor olabilir. Beklenmedik kesinti riskine karsi degisim planlamasi onerilir.';
+      'Aytech CRM algoritmalarimiz ' + fullName + ' sisteminizin ' + diff + ' yillik kullanim verisini analiz etti: Akuleriniz risk sinirindadir. Yuzde 30 kapasite kaybi tespit edilmis olabilir. Bir sonraki degisim donemini sisteme baglayarak takibi bize birakin.';
     document.getElementById('offer-btn-amber').href = waBase;
     document.getElementById('result-amber').style.display = 'block';
   } else {
     document.getElementById('result-text-red').textContent =
-      fullName + ' sisteminizin aku omru dolmustur: ' + diff + ' yillik kullanim. Kritik risk! Ilk sebeke kesintisinde cihaziniz yuku tasiymayacaktir. Sunuculariniz, uretim hattiniz veya veri merkeziniz kesintiye girebilir. Acil degisim onerilir.';
+      'Aytech CRM algoritmalarimiz kritik bir durum tespit etti: ' + fullName + ' sisteminiz ' + diff + ' yildir kullanimdadir ve aku omru dolmustur. Ilk sebeke kesintisinde cihaziniz yuku tasiyamayacaktir. Acil degisim ve Smart-Track anlasmasi onerilir.';
     document.getElementById('offer-btn-red').href = waBase;
     document.getElementById('result-red').style.display = 'block';
   }
